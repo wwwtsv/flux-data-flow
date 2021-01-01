@@ -1,0 +1,24 @@
+{
+    "name": "flux-data-flow",
+    "version": "1.0.0",
+    "main": "/src/index.ts",
+    "source": "src/index.ts",
+    "module": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "license": "MIT",
+    "scripts": {
+        "start": "parcel serve ./src/index.html",
+        "build": "parcel build ./src/index.html"
+    },
+    "browserslist": [
+        "> 0.2%"
+    ],
+    "devDependencies": {
+        "@types/lodash": "^4.14.166",
+        "lodash": "^4.17.20",
+        "parcel": "1.12.4",
+        "prettier": "^2.2.1",
+        "sass": "^1.32.0",
+        "typescript": "^4.1.3"
+    }
+}
