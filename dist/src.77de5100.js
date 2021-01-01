@@ -19379,7 +19379,7 @@ var Store = /*#__PURE__*/function () {
   }, {
     key: "unsubscribe",
     value: function unsubscribe(subscriber) {
-      this.subscribers.filter(function (e) {
+      this.subscribers = this.subscribers.filter(function (e) {
         return e !== subscriber;
       });
     }

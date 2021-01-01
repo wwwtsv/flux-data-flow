@@ -22,7 +22,7 @@ class Store<T, S> {
     }
 
     public unsubscribe(subscriber: S): void {
-        this.subscribers.filter((e) => e !== subscriber);
+        this.subscribers = this.subscribers.filter((e) => e !== subscriber);
     }
 
     protected areEqual(one: T, two: T): boolean {
